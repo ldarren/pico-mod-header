@@ -11,7 +11,10 @@ return{
     signals:['menu','headerButtonClicked'],
     deps:{
         paneId:'int',
-        tpl:'file'
+        tpl:'file',
+		title:'title',
+		btnLeft:'map',
+		btnRight:'map'
     },
     create: function(deps){
         this.el.innerHTML=deps.tpl({title:''})
@@ -19,6 +22,8 @@ return{
 		this.btnLeft=this.el.querySelector('svg.icon.left use')
 		this.btnRight=this.el.querySelector('svg.icon.right use')
 		this.el.classList.add('hidden')
+
+		this.slots.header.call(this,null,null,deps.title,deps.btnLeft,deps.btnRight)
     },
     events: {
         'tap svg': function(e){
