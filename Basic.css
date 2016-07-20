@@ -1,4 +1,4 @@
-#header {
+.header {
     flex:0 0 auto;
     display:flex;
     flex-direction: column;
@@ -9,20 +9,20 @@
 	border-bottom: 1px solid #b3b3b3;
 	margin-top:1.5rem;
 }
-#header .icon {
+.header .icon {
   position: absolute;
   top: 0;
   width:5rem;
   height:5rem;
   padding:1.5rem;
 }
-#header .icon.left{
+.header .icon.left{
   left: 1.5rem;
 }
-#header .icon.right{
+.header .icon.right{
   right: 1.5rem;
 }
-#header>h1{
+.header>h1{
   font-size: 2.2rem;
   font-weight: normal;
   line-height:5rem;
