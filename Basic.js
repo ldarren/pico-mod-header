@@ -23,7 +23,7 @@ return{
 		this.btnRight=this.el.querySelector('svg.icon.right use')
 		this.el.classList.add('hidden')
 
-		this.slots.header.call(this,null,null,deps.title,deps.btnLeft,deps.btnRight)
+		this.slots.header.call(this,null,null,deps.paneId,deps.title,deps.btnLeft,deps.btnRight)
     },
     events: {
         'tap svg': function(e){
@@ -51,7 +51,8 @@ return{
         } 
     },
     slots: {
-        header: function(from, sender, title, left, right){
+        header: function(from, sender, paneId, title, left, right){
+			if (paneId !== this.deps.paneId) return
 			if (!title) return this.el.classList.add('hidden')
             this.el.classList.remove('hidden')
 
