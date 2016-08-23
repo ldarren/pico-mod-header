@@ -6,8 +6,8 @@
     order:-10;
     position: relative;
     text-align: center;
-	background-color:#0C9;
-	color:#FFF;
+	background:#fff;
+	color:#007AFF;
 	border-bottom: 1px solid #b3b3b3;
 	pointer-events:auto;
 }
