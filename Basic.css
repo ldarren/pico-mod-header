@@ -1,4 +1,4 @@
-.__ .header {
+#__ .header {
     flex:0 0 auto;
     display:flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 	border-bottom: 1px solid #b3b3b3;
 	pointer-events:auto;
 }
-.__ .header .icon {
+#__ .header .icon {
 	position: absolute;
 	top: 0;
 	width:5rem;
@@ -20,13 +20,13 @@
 	fill:none;
 	stroke:white;
 }
-.__ .header .icon.left{
+#__ .header .icon.left{
 	left: 1.5rem;
 }
-.__ .header .icon.right{
+#__ .header .icon.right{
 	right: 1.5rem;
 }
-.__ .header>h1{
+#__ .header>h1{
 	font-size: 2.2rem;
 	font-weight: normal;
 	line-height:5rem;
