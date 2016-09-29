@@ -2,11 +2,10 @@
     flex:0 0 auto;
     display:flex;
     flex-direction: column;
-    flex-shrink:0;
     order:-10;
     position: relative;
     text-align: center;
-	background:#fff;
+	background:WhiteSmoke;
 	color:#007AFF;
 	border-bottom: 1px solid #b3b3b3;
 	pointer-events:auto;
@@ -18,7 +17,7 @@
 	height:5rem;
 	padding:1.5rem;
 	fill:none;
-	stroke:white;
+	stroke:#007AFF;
 }
 #__ .header .icon.left{
 	left: 1.5rem;
