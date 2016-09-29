@@ -21,7 +21,6 @@ return{
 		this.title=this.el.querySelector('h1')
 		this.btnLeft=this.el.querySelector('svg.icon.left use')
 		this.btnRight=this.el.querySelector('svg.icon.right use')
-		this.el.classList.add('hidden')
 
 		this.slots.header.call(this,null,null,deps.paneId,deps.title,deps.btnLeft,deps.btnRight)
     },
